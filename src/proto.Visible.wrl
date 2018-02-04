@@ -1,0 +1,30 @@
+#VRML V2.0 utf8
+
+PROTO Visible [
+	exposedField  SFBool  visible   TRUE
+	exposedField  MFNode  children  []
+]{
+	DEF sw Switch {
+		choice Group {
+			children IS children
+		}
+	}
+	Script {
+		field         SFNode  sw       USE sw
+		exposedField  SFBool  visible  IS visible
+		directOutput TRUE
+		url "javascript:
+
+		function refresh(){
+			sw.whichChoice = visible ? 0 : -1;
+		}
+		function visible(){
+			refresh();
+		}
+		function initialize(){
+			refresh();
+		}
+
+		"
+	}
+}
