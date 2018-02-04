@@ -1,0 +1,20 @@
+{
+  "name": "@wildpeaks/proto-visible",
+  "version": "1.0.0",
+  "description": "PROTO Visible",
+  "main": "src/proto.Visible.wrl",
+  "files": [
+    "src/proto.Visible.wrl"
+  ],
+  "repository": "https://github.com/wildpeaks/proto-visible",
+  "keywords": [
+    "wildpeaks",
+    "vrml"
+  ],
+  "author": "Cecile Muller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wildpeaks/proto-visible/issues"
+  },
+  "homepage": "https://github.com/wildpeaks/proto-visible#readme"
+}
